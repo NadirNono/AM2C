@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="@M2C Radioactivity Management">
+        <meta name="author" content="@M2C">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>{% block title %}AM2C{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+            <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+            <link rel="manifest" href="favicon/manifest.json">
+            <link href="leaflet/leaflet.css" rel="stylesheet" type="text/css">
+            <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+            <link href="/css/css.css" rel="stylesheet" type="text/css">
+            <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+            <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+            <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="/css/stylish.css" rel="stylesheet" type="text/css">
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            {% block header %}
+            <header id="page-top" class="header">
+                <div class="container-fluid fixed-top bg-white" style="width:100%">
+                    <h1 class="mb-1 text-center" style="color:#0D1056">@M<span class="text-success">2</span>C</h1>
+                    <p class="mb-1 text-center" style="color:#0D1056"><em>Radioactivity Management</em></p>
+                    <div class="navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-map-signs" style="color:#0D1056"></i></span></button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="container-fluid" style="max-width:100%">
+                                <nav class="nav justify-content-center text-uppercase">
+                                    <a class="nav-item nav-link" href="{{ path('homepage') }}">Accueil</a>
+                                    <a class="nav-item nav-link" href="#actualites">Actualites</a>
+                                    <a class="nav-item nav-link" href="#salon">Salon</a>
+                                    <a class="nav-item nav-link" href="#activites">Activites</a>
+                                    <a class="nav-item nav-link" href="#services">Services</a>
+                                    <a class="nav-item nav-link" href="#installations">Installations</a>
+                                    <a class="nav-item nav-link" href="#certifications">Certifications</a>
+                                    <a class="nav-item nav-link" href="#clients">Clients</a>
+                                    <a class="nav-item nav-link" href="#carte">Map</a>
+                                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            {% endblock %}
+            {% block main %}
+            {% endblock %}
+            {% block footer %}
+            <footer id="footer" class="footer">
+                <div class="container-fluid">
+                    <div class="container bottom_border">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 mx-auto mr-3 ml-3 mt-3 mb-3">
+                                <h5 class="headin5_amrc col_white_amrc pt2">AGENCE SUD EST</h5>
+                                <p class="mb10"><strong>SIEGE SOCIAL</strong><br>
+                                Technopôle de l’Arbois<br>
+                                Bâtiment Lavoisier<br>
+                                Avenue Louis Philibert<br>
+                                13100 Aix-en-Provence<br>
+                                France<br></p>
+                                <p><i class="fa fa-location-arrow"></i><abbr title="Fax siege social"> Fax :</abbr> +33 (0)4 42 58 54 87</p>
+                                <p><i class="fa fa-phone"></i><abbr title="Telephone siege social"> Tel :</abbr> +33 (0)9 81 63 54 87<br></p>
+                                <p class="text-white"><i class="fa fa fa-envelope"></i><a href="mailto:contact@am2c.fr"> contact@am2c.fr</a></p>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 mx-auto mr-3 ml-3 mt-3 mb-3">
+                                <h5 class="headin5_amrc col_white_amrc pt2">DOCUMENTS</h5>
+                                <ul class="footer_ul_amrc">
+                                    <li><a href="pdf/Brochure.pdf" download="Brochure.pdf" target="_blank">Brochure</a></li>
+                                    <li><a href="pdf/Formation.pdf" download="Formation.pdf" target="_blank">Formations</a></li>
+                                    <li><a href="pdf/Maintenance.pdf" download="Maintenance.pdf" target="_blank">Maintenance</a></li>
+                                </ul>
+                                <h5 class="headin5_amrc col_white_amrc pt2">VIDEOS</h5>
+                                <ul class="footer_ul_amrc">
+                                    <li><a href="video/@m2c.mp4" download="@m2c.mp4" target="_blank">Entreprise</a></li>
+                                    <li><a href="video/pollutec.mp4" download="pollutec.mp4" target="_blank">Equipement</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 mx-auto mr-3 ml-3 mt-3 mb-3">
+                            <h5 class="headin5_amrc col_white_amrc pt2">PARTENAIRES</h5>
+                                <ul class="footer_ul_amrc">
+                                    <li><a href="http://tecnasa.es/" target="_blank">Tecnasa</a></li>
+                                    <li><a href="http://federec.com/" target="_blank">Federec</a></li>
+                                    <li><a href="http://www.preciamolen.com/fr/" target="_blank">Precia Molen</a></li>
+                                    <li><a href="http://www.eco-entreprises.fr/" target="_blank">Eco entreprises</a></li>
+                                    <li><a href="http://www.caktus.fr/" target="_blank">Caktus</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 mx-auto mr-3 ml-3 mt-3 mb-3">
+                                <h5 class="headin5_amrc col_white_amrc pt2">AGENCE NORD EST</h5>
+                                <p class="mb10"><strong>FILLIALE</strong><br>
+                                ZI La Chapelette<br>
+                                Rue Pierre de Gilles de Genes<br>
+                                80200 Peronne<br>
+                                France<br></p><br>
+                                <p><i class="fa fa-location-arrow"></i><abbr title="Fax siege social"> Fax :</abbr> +33 (0)4 42 58 54 87</p>
+                                <p><i class="fa fa-phone"></i><abbr title="Telephone siege social"> Tel :</abbr> +33 (0)9 81 63 54 87<br></p>
+                                <p class="text-white"><i class="fa fa fa-envelope"></i><a href="mailto:contact@am2c.fr"> contact@am2c.fr</a></p>
+                            </div>
+                        </div>
+                        <div class="container icones">
+                            <div class="text-center center-block">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/pages/category/Company/AM2C-Radioactivity-Management-1106199039457906/" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://fr.linkedin.com/company/-m2c" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center"><a href="mentions-legales.html" target="_blank">Mentions-legales</a></p><p class="text-center">Copyright @2019 | @M2C</p>
+            </footer>
+        {% endblock %}
+        {% endblock %}
+        {% block javascripts %}
+        <script src="leaflet/leaflet.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="/js/stylish.js"></script>
+        <script src="/js/stylish.min.js"></script>
+        <script src="/js/stylish-map.js"></script>
+        <script src="/js/slider.js"></script>
+        <script src="/js/slick.js"></script>
+        <script src="/js/jqBootstrapValidation.js"></script>
+        <script src="/js/contact_me.js"></script>
+        <script src="/js/stylish-formContact.js"></script>
+        <script src="/js/cookiechoices.js"></script>
+        <script src="/js/cookies.js"></script>
+        {% endblock %}
+    </body>
+</html>
